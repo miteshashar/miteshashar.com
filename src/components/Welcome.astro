@@ -1,0 +1,461 @@
+---
+// import astroLogo from '../assets/astro.svg';
+import background from "../assets/background.svg";
+---
+
+<div id="container">
+  <img id="background" src={background.src} alt="" fetchpriority="high" />
+  <main>
+    <section id="hero">
+      <!-- <a href="https://astro.build"
+				><img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" /></a
+			> -->
+      <h1 id="intro" class="center">
+        Hi! I am Mitesh Ashar, a software engineer with 16 years of
+        <a
+          href="https://linkedin.com/in/miteshashar"
+          target="_blank"
+          title="LinkedIn - Mitesh Ashar">cross-domain experience</a
+        >.
+        <!-- Get access to leads for your business discovered with smart crawls, scraping, AI &amp; semantic analysis! -->
+      </h1>
+      <div class="full">
+        <h1 class="center full">You can hire me to…</h1>
+        <section id="services">
+          <a class="service box center" href="#">
+            <h2>Build Software</h2>
+            <p>Full-stack, DevOps &amp; Applied AI.</p>
+            <p>
+              <small>
+                With experience in Python, Node.js, React, SolidJS and more, I
+                can help you build your next project or contribute to an
+                existing one.
+              </small>
+            </p>
+          </a>
+          <a class="service box center" href="#">
+            <h2>Generate Business Leads</h2>
+            <p>Qualified, Relevant &amp; Targeted.</p>
+            <p>
+              <small>
+                With powerful tools augmented with AI &amp; semantic analysis, I
+                can help you with scraping, mining &amp; data analysis .
+              </small>
+            </p>
+          </a>
+          <a class="service box center" href="#">
+            <h2>Automate Processes</h2>
+            <p>Tools, notifications, pipelines…</p>
+            <p>
+              <small>
+                With advanced scalable setups of n8n, no/low code tools on your
+                infrastructure, I can help you save time &amp; <em>$$$</em>!
+              </small>
+            </p>
+          </a>
+        </section>
+      </div>
+      <section id="links" class="full center">
+        <a
+          class="button"
+          target="_blank"
+          onclick="window.location.href = atob('bWFpbHRvOk1pdGVzaCUyMEFzaGFyPGVtYWlsQG1pdGVzaGFzaGFyLmNvbT4/c3ViamVjdD1bV2Vic2l0ZV0lMjAuLi4mYm9keT1IaSUyME1pdGVzaCwlMEElMEE='); return false;"
+          href="javascript:void(0);"
+          rel="noreferrer"
+          title="Email me"
+          aria-label="Email me"
+        >
+          <svg viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" fill="none" width="21" height="21"></rect>
+            <g>
+              <path
+                d="M3.87 4h13.25C18.37 4 19 4.59 19 5.79v8.42c0 1.19-.63 1.79-1.88 1.79H3.87c-1.25 0-1.88-.6-1.88-1.79V5.79c0-1.2.63-1.79 1.88-1.79zm6.62 8.6l6.74-5.53c.24-.2.43-.66.13-1.07-.29-.41-.82-.42-1.17-.17l-5.7 3.86L4.8 5.83c-.35-.25-.88-.24-1.17.17-.3.41-.11.87.13 1.07z"
+                fill="currentColor"></path>
+            </g>
+          </svg>
+          Email me
+        </a>
+        <a
+          class="button"
+          target="_blank"
+          href="https://calendly.com/miteshashar/30m-remote"
+          title="Book a meeting with me"
+          aria-label="Book a meeting with me"
+        >
+          <svg
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            id="Calendly--Streamline-Simple-Icons"
+            ><desc>Calendly Streamline Icon: https://streamlinehq.com</desc
+            ><title>Calendly</title><path
+              d="M19.655 14.262c0.281 0 0.557 0.023 0.828 0.064 0 0.005 -0.005 0.01 -0.005 0.014 -0.105 0.267 -0.234 0.534 -0.381 0.786l-1.219 2.106c-1.112 1.936 -3.177 3.127 -5.411 3.127h-2.432c-2.23 0 -4.294 -1.191 -5.412 -3.127l-1.218 -2.106a6.251 6.251 0 0 1 0 -6.252l1.218 -2.106C6.736 4.832 8.8 3.641 11.035 3.641h2.432c2.23 0 4.294 1.191 5.411 3.127l1.219 2.106c0.147 0.252 0.271 0.519 0.381 0.786 0 0.004 0.005 0.009 0.005 0.014 -0.267 0.041 -0.543 0.064 -0.828 0.064 -1.816 0 -2.501 -0.607 -3.291 -1.306 -0.764 -0.676 -1.711 -1.517 -3.44 -1.517h-1.029c-1.251 0 -2.387 0.455 -3.2 1.278 -0.796 0.805 -1.233 1.904 -1.233 3.099v1.411c0 1.196 0.437 2.295 1.233 3.099 0.813 0.823 1.949 1.278 3.2 1.278h1.034c1.729 0 2.676 -0.841 3.439 -1.517 0.791 -0.703 1.471 -1.306 3.287 -1.301Zm0.005 -3.237c0.399 0 0.794 -0.036 1.179 -0.11 -0.002 -0.004 -0.002 -0.01 -0.002 -0.014 -0.073 -0.414 -0.193 -0.823 -0.349 -1.218 0.731 -0.12 1.407 -0.396 1.986 -0.819 0 -0.004 -0.005 -0.013 -0.005 -0.018 -0.331 -1.085 -0.832 -2.101 -1.489 -3.03 -0.649 -0.915 -1.435 -1.719 -2.331 -2.395 -1.867 -1.398 -4.088 -2.138 -6.428 -2.138 -1.448 0 -2.855 0.28 -4.175 0.841 -1.273 0.543 -2.423 1.315 -3.407 2.299S2.878 6.552 2.341 7.83c-0.557 1.324 -0.842 2.726 -0.842 4.175 0 1.448 0.281 2.855 0.842 4.174 0.542 1.274 1.314 2.423 2.298 3.407s2.129 1.761 3.407 2.299c1.324 0.556 2.727 0.841 4.175 0.841 2.34 0 4.561 -0.74 6.428 -2.137a10.815 10.815 0 0 0 2.331 -2.396c0.652 -0.929 1.158 -1.949 1.489 -3.03 0 -0.004 0.005 -0.014 0.005 -0.018 -0.579 -0.423 -1.255 -0.699 -1.986 -0.819 0.161 -0.395 0.276 -0.804 0.349 -1.218 0.005 -0.009 0.005 -0.014 0.005 -0.023 0.869 0.166 1.692 0.506 2.404 1.035 0.685 0.505 0.552 1.075 0.446 1.416C22.184 20.437 17.619 24 12.221 24c-6.625 0 -12 -5.375 -12 -12s5.37 -12 12 -12c5.398 0 9.963 3.563 11.471 8.464 0.106 0.341 0.239 0.915 -0.446 1.421 -0.717 0.529 -1.535 0.873 -2.404 1.034 0.128 0.716 0.128 1.45 0 2.166 -0.387 -0.074 -0.782 -0.11 -1.182 -0.11 -4.184 0 -3.968 2.823 -6.736 2.823h-1.029c-1.899 0 -3.15 -1.357 -3.15 -3.095v-1.411c0 -1.738 1.251 -3.094 3.15 -3.094h1.034c2.768 0 2.552 2.823 6.731 2.827Z"
+              fill="currentColor"></path></svg
+          >
+          Book a Meeting
+        </a>
+        <a
+          class="button"
+          target="_blank"
+          href="https://www.linkedin.com/in/miteshashar"
+          title="LinkedIn - Mitesh Ashar"
+        >
+          <svg
+            width="24px"
+            height="24px"
+            viewBox="0 0 24 24"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>LinkedIn icon</title>
+            <path
+              fill="currentColor"
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+            ></path>
+          </svg>
+          LinkedIn
+        </a>
+        <a
+          class="button"
+          target="_blank"
+          href="https://github.com/miteshashar"
+          title="GitHub - Mitesh Ashar"
+          aria-label="GitHub - Mitesh Ashar"
+        >
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M7.976 0A7.977 7.977 0 000 7.976c0 3.522 2.3 6.507 5.431 7.584.392.049.538-.196.538-.392v-1.37c-2.201.49-2.69-1.076-2.69-1.076-.343-.93-.881-1.175-.881-1.175-.734-.489.048-.489.048-.489.783.049 1.224.832 1.224.832.734 1.223 1.859.88 2.3.685.048-.538.293-.88.489-1.076-1.762-.196-3.621-.881-3.621-3.964 0-.88.293-1.566.832-2.153-.05-.147-.343-.978.098-2.055 0 0 .685-.196 2.201.832.636-.196 1.322-.245 2.007-.245s1.37.098 2.006.245c1.517-1.027 2.202-.832 2.202-.832.44 1.077.146 1.908.097 2.104a3.16 3.16 0 01.832 2.153c0 3.083-1.86 3.719-3.62 3.915.293.244.538.733.538 1.467v2.202c0 .196.146.44.538.392A7.984 7.984 0 0016 7.976C15.951 3.572 12.38 0 7.976 0z"
+              fill="currentColor"></path>
+          </svg>
+          Github
+        </a>
+        <a
+          class="button"
+          target="_blank"
+          href="https://bsky.app/profile/miteshashar.com"
+          title="Bluesky - Mitesh Ashar"
+          aria-label="Bluesky - Mitesh Ashar"
+        >
+          <svg
+            role="img"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            id="Bluesky--Streamline-Simple-Icons"
+            ><desc>Bluesky Streamline Icon: https://streamlinehq.com</desc
+            ><title>Bluesky</title><path
+              d="M12 10.8c-1.087 -2.114 -4.046 -6.053 -6.798 -7.995C2.566 0.944 1.561 1.266 0.902 1.565 0.139 1.908 0 3.08 0 3.768c0 0.69 0.378 5.65 0.624 6.479 0.815 2.736 3.713 3.66 6.383 3.364 0.136 -0.02 0.275 -0.039 0.415 -0.056 -0.138 0.022 -0.276 0.04 -0.415 0.056 -3.912 0.58 -7.387 2.005 -2.83 7.078 5.013 5.19 6.87 -1.113 7.823 -4.308 0.953 3.195 2.05 9.271 7.733 4.308 4.267 -4.308 1.172 -6.498 -2.74 -7.078a8.741 8.741 0 0 1 -0.415 -0.056c0.14 0.017 0.279 0.036 0.415 0.056 2.67 0.297 5.568 -0.628 6.383 -3.364 0.246 -0.828 0.624 -5.79 0.624 -6.478 0 -0.69 -0.139 -1.861 -0.902 -2.206 -0.659 -0.298 -1.664 -0.62 -4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"
+              fill="currentColor"
+              stroke-width="1"></path></svg
+          >
+          Bluesky
+        </a>
+        <a
+          class="button"
+          target="_blank"
+          href="https://x.com/iMBA"
+          title="Twitter/X - Mitesh Ashar(@iMBA)"
+          aria-label="Twitter/X - Mitesh Ashar(at iMBA)"
+        >
+          <svg
+            viewBox="0 0 15 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.9773 1.46694C14.964 1.26637 14.8319 1.09326 14.642 1.02752C14.452 0.961775 14.2412 1.01618 14.1067 1.16562C13.7611 1.54977 13.3243 1.81009 12.881 1.92878C12.2644 1.35315 11.436 1.00002 10.5256 1.00002C8.57181 1.00002 6.98923 2.58615 6.98923 4.54112V4.98092C3.99799 4.74976 2.39838 2.47748 1.96675 1.3247C1.89698 1.13836 1.72337 1.01112 1.52468 1.00071C1.32598 0.990288 1.14002 1.09867 1.05114 1.27669C0.00441813 3.37338 -0.156858 5.40696 0.603899 7.13863C1.27032 8.65556 2.61055 9.86392 4.51008 10.6645C3.64679 11.2763 2.19379 12 0.500039 12C0.279771 12 0.0854497 12.1442 0.0215445 12.355C-0.0423608 12.5658 0.0392055 12.7935 0.222392 12.9158C1.8465 14.0003 3.54865 14.0001 5.13184 14L5.1803 14C10.041 14 13.98 10.0538 13.98 5.18751V4.70922C14.3434 4.33984 14.6264 3.96173 14.7998 3.4729C14.9932 2.92746 15.0322 2.295 14.9773 1.46694Z"
+              fill="currentColor"></path>
+          </svg>
+          Twitter
+        </a>
+      </section>
+    </section>
+
+    <!-- <a href="https://astro.build/blog/astro-5/" id="news" class="box">
+      <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
+        ><path
+          d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
+          fill="#111827"></path></svg
+      >
+      <h2>What's New in Astro 5.0?</h2>
+      <p>
+        From content layers to server islands, click to learn more about the new
+        features and improvements in Astro 5.0
+      </p>
+    </a> -->
+  </main>
+
+  <style>
+    body {
+      background-color: #dce;
+    }
+    #background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      filter: blur(50px);
+    }
+
+    #container {
+      font-family: Inter, Roboto, "Helvetica Neue", "Arial Nova", "Nimbus Sans",
+        Arial, sans-serif;
+      height: 100%;
+      z-index: 1;
+    }
+
+    main {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    #hero {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3vh 5vw;
+      height: 93vh;
+      gap: 5vh;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    #links {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    #links a,
+    #intro a {
+      color: rgba(40, 88, 10, 0.8);
+    }
+
+    #links a,
+    #intro a,
+    #links a *,
+    #intro a * {
+      transition: all 0.2s;
+    }
+
+    #links a {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 5px 10px 5px 7px;
+      text-decoration: none;
+    }
+
+    #links a:hover,
+    #intro a:hover {
+      color: #15142e;
+    }
+
+    #links a svg,
+    #intro a svg {
+      height: 1em;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    #links a.button,
+    #intro a.button {
+      color: rgb(230, 230, 230);
+      background: linear-gradient(
+        83.21deg,
+        rgba(17, 36, 5, 0.8) 0%,
+        #333 100%
+      );
+      box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.12),
+        inset 0 -2px 0 rgba(0, 0, 0, 0.24);
+      border-radius: 10px;
+    }
+
+    #links a.button:hover,
+    #intro a.button:hover {
+      color: white;
+      box-shadow: none;
+    }
+
+    pre {
+      font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
+        Consolas, "DejaVu Sans Mono", monospace;
+      font-weight: normal;
+      background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin: 0;
+    }
+
+    h2 {
+      margin: 0 0 0.5em;
+      font-weight: normal;
+      color: #111827;
+      font-size: 20px;
+    }
+
+    p {
+      color: #4b5563;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: -0.006em;
+      margin: 0;
+    }
+
+    p small {
+      line-height: 18px;
+    }
+
+    code {
+      display: inline-block;
+      background:
+        linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
+        linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      padding: 6px 8px;
+    }
+
+    .box {
+      padding: 16px;
+      background: rgba(255, 255, 255, 1);
+      border-radius: 16px;
+      border: 1px solid white;
+    }
+
+    #news {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      max-width: 300px;
+      text-decoration: none;
+      transition: all 0.2s;
+      backdrop-filter: blur(50px);
+    }
+
+    #news:hover {
+      background: rgba(255, 255, 255, 0.55);
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .full {
+      width: 100%;
+    }
+
+    #services {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(30%, 2fr));
+      gap: 1.5%;
+      z-index: 1;
+    }
+
+    #services .service {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      flex-direction: column;
+      font-size: 1em;
+      text-decoration: none;
+      backdrop-filter: blur(50px);
+      border-radius: 16px;
+      background: radial-gradient(
+        150% 150% at 25% 75%,
+        rgba(240, 240, 240, 0.3) 0%,
+        rgba(255, 255, 255, 0.9) 100%
+      );
+      border: 1px solid rgba(246, 246, 246, 0.85);
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+      z-index: 2;
+    }
+    #services .service,
+    #services .service:hover {
+      transition:
+        all 0.3s ease-in,
+        box-shadow 0.6s ease-in-out;
+    }
+    #services .service:hover {
+      box-shadow: 0 0 100px 15px rgba(24, 42, 12, 0.2);
+      transform: scale(1.02);
+      background: radial-gradient(
+        150% 150% at 25% 75%,
+        rgba(248, 248, 248, 0.5) 0%,
+        rgba(255, 255, 255, 0.95) 100%
+      );
+      border-color: rgba(200, 200, 200, 0.9);
+      z-index: 2000;
+    }
+    small {
+      color: #5c6674;
+    }
+
+    @media screen and (max-height: 368px) {
+      #news {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      main {
+        padding: 0 2vw;
+      }
+      #container {
+        display: flex;
+        flex-direction: column;
+        gap: 1vh;
+      }
+
+      #hero {
+        display: block;
+        padding: 0.25vh 3vw;
+      }
+
+      .box {
+        padding: 8px 10px;
+      }
+
+      #links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45%, 2fr));
+        gap: 8px;
+      }
+
+      #links a.button {
+        padding: 14px 18px;
+        display: inline-block;
+      }
+
+      #services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 2fr));
+        gap: 2dvh;
+      }
+
+      #news {
+        right: 16px;
+        left: 16px;
+        bottom: 2.5rem;
+        max-width: 100%;
+      }
+
+      h1 {
+        line-height: 1.25;
+        font-size: 20px;
+        margin-block-end: 0.5em;
+        margin-block-start: 0.5em;
+      }
+    }
+  </style>
+</div>
