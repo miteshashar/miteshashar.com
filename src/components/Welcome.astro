@@ -7,9 +7,6 @@ import background from "../assets/background.svg";
   <img id="background" src={background.src} alt="" fetchpriority="high" />
   <main>
     <section id="hero">
-      <!-- <a href="https://astro.build"
-				><img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" /></a
-			> -->
       <h1 id="intro" class="center">
         Hi! I am Mitesh Ashar, a software engineer with 16 years of
         <a
@@ -17,7 +14,6 @@ import background from "../assets/background.svg";
           target="_blank"
           title="LinkedIn - Mitesh Ashar">cross-domain experience</a
         >.
-        <!-- Get access to leads for your business discovered with smart crawls, scraping, AI &amp; semantic analysis! -->
       </h1>
       <div class="full">
         <h1 class="center full">You can hire me to…</h1>
@@ -171,19 +167,6 @@ import background from "../assets/background.svg";
         </a>
       </section>
     </section>
-
-    <!-- <a href="https://astro.build/blog/astro-5/" id="news" class="box">
-      <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
-        ><path
-          d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
-          fill="#111827"></path></svg
-      >
-      <h2>What's New in Astro 5.0?</h2>
-      <p>
-        From content layers to server islands, click to learn more about the new
-        features and improvements in Astro 5.0
-      </p>
-    </a> -->
   </main>
 
   <style>
@@ -268,15 +251,19 @@ import background from "../assets/background.svg";
     #links a.button,
     #intro a.button {
       color: rgb(230, 230, 230);
-      background: linear-gradient(
-        83.21deg,
-        rgba(17, 36, 5, 0.8) 0%,
-        #333 100%
-      );
+      background: linear-gradient(83.21deg, rgba(17, 36, 5, 0.8) 0%, #333 100%);
       box-shadow:
         inset 0 0 0 1px rgba(255, 255, 255, 0.12),
         inset 0 -2px 0 rgba(0, 0, 0, 0.24);
       border-radius: 10px;
+      display: inline-flex;
+      place-content: start;
+      padding: 0.5em 0.75em;
+    }
+    #links a.button svg {
+      /* min-height: -webkit-fill-available; */
+      margin-left: 0;
+      max-width: min-content;
     }
 
     #links a.button:hover,
@@ -332,20 +319,6 @@ import background from "../assets/background.svg";
       border: 1px solid white;
     }
 
-    #news {
-      position: absolute;
-      bottom: 16px;
-      right: 16px;
-      max-width: 300px;
-      text-decoration: none;
-      transition: all 0.2s;
-      backdrop-filter: blur(50px);
-    }
-
-    #news:hover {
-      background: rgba(255, 255, 255, 0.55);
-    }
-
     .center {
       text-align: center;
     }
@@ -360,6 +333,7 @@ import background from "../assets/background.svg";
       grid-template-columns: repeat(auto-fit, minmax(30%, 2fr));
       gap: 1.5%;
       z-index: 1;
+      margin: 0.5em auto;
     }
 
     #services .service {
@@ -401,12 +375,6 @@ import background from "../assets/background.svg";
       color: #5c6674;
     }
 
-    @media screen and (max-height: 368px) {
-      #news {
-        display: none;
-      }
-    }
-
     @media screen and (max-width: 768px) {
       main {
         padding: 0 2vw;
@@ -428,19 +396,21 @@ import background from "../assets/background.svg";
 
       #links {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(45%, 2fr));
-        gap: 8px;
+        grid-template-columns: repeat(auto-fit, minmax(30%, 3fr));
+        gap: 3%;
+        padding-bottom: 2em;
       }
 
       #links a.button {
-        padding: 14px 18px;
-        display: inline-block;
+        padding: 0.6em 1em;
+        font-size: smaller;
       }
 
       #services {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100%, 2fr));
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
         gap: 2dvh;
+        margin: 0 auto 1em;
       }
 
       #news {
@@ -455,6 +425,27 @@ import background from "../assets/background.svg";
         font-size: 20px;
         margin-block-end: 0.5em;
         margin-block-start: 0.5em;
+      }
+    }
+    @media screen and (max-width: 560px) {
+      #links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(45%, 0.5fr));
+        gap: 8px;
+        padding-bottom: 3em;
+
+      }
+    }
+    @media screen and (max-width: 368px) {
+      #links a.button {
+        padding: 0.6em 1em;
+        font-size: smaller;
+      }
+      #services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        gap: 2dvh;
+        margin: 0 auto 2em;
       }
     }
   </style>
