@@ -18,7 +18,7 @@ import background from "../assets/background.svg";
       <div class="full">
         <h1 class="center full">You can hire me to…</h1>
         <section id="services">
-          <a class="service box center" href="#">
+          <span class="service box center">
             <h2>Build Software</h2>
             <p>Full-stack, DevOps &amp; Applied AI.</p>
             <p>
@@ -28,8 +28,8 @@ import background from "../assets/background.svg";
                 existing one.
               </small>
             </p>
-          </a>
-          <a class="service box center" href="#">
+          </span>
+          <span class="service box center">
             <h2>Generate Business Leads</h2>
             <p>Qualified, Relevant &amp; Targeted.</p>
             <p>
@@ -38,8 +38,8 @@ import background from "../assets/background.svg";
                 can help you with scraping, mining &amp; data analysis .
               </small>
             </p>
-          </a>
-          <a class="service box center" href="#">
+          </span>
+          <span class="service box center">
             <h2>Automate Processes</h2>
             <p>Tools, notifications, pipelines…</p>
             <p>
@@ -48,7 +48,7 @@ import background from "../assets/background.svg";
                 infrastructure, I can help you save time &amp; <em>$$$</em>!
               </small>
             </p>
-          </a>
+          </span>
         </section>
       </div>
       <section id="links" class="full center">
@@ -166,6 +166,19 @@ import background from "../assets/background.svg";
           Twitter
         </a>
       </section>
+      <section id="source-code" class="full center">
+        Built with <a
+          href="https://astro.build"
+          target="_blank"
+          title="Built with Astro">Astro</a
+        > |
+        <a
+          href="https://github.com/miteshashar/miteshashar.com"
+          target="_blank"
+          title="Source code"
+          class="pre">src</a
+        >
+      </section>
     </section>
   </main>
 
@@ -216,15 +229,24 @@ import background from "../assets/background.svg";
       justify-content: center;
     }
 
+    #source-code {
+      font-style: italic;
+      text-align: center;
+      font-size: small;
+      margin: 1em auto 1em;
+    }
+
     #links a,
-    #intro a {
+    #intro a,
+    #source-code a {
       color: rgba(40, 88, 10, 0.8);
     }
 
     #links a,
     #intro a,
     #links a *,
-    #intro a * {
+    #intro a *,
+    #source-code a {
       transition: all 0.2s;
     }
 
@@ -233,11 +255,16 @@ import background from "../assets/background.svg";
       justify-content: space-evenly;
       align-items: center;
       padding: 5px 10px 5px 7px;
+    }
+
+    #links a,
+    #source-code a {
       text-decoration: none;
     }
 
     #links a:hover,
-    #intro a:hover {
+    #intro a:hover,
+    #source-code a:hover {
       color: #15142e;
     }
 
@@ -260,8 +287,12 @@ import background from "../assets/background.svg";
       place-content: start;
       padding: 0.5em 0.75em;
     }
+    #links a.button {
+      padding-top: 0.5em !important;
+      padding-bottom: 0.5em !important;
+    }
     #links a.button svg {
-      /* min-height: -webkit-fill-available; */
+      padding: 0px;
       margin-left: 0;
       max-width: min-content;
     }
@@ -272,15 +303,11 @@ import background from "../assets/background.svg";
       box-shadow: none;
     }
 
-    pre {
+    pre,
+    .pre {
       font-family: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo,
         Consolas, "DejaVu Sans Mono", monospace;
       font-weight: normal;
-      background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      margin: 0;
     }
 
     h2 {
@@ -302,18 +329,8 @@ import background from "../assets/background.svg";
       line-height: 18px;
     }
 
-    code {
-      display: inline-block;
-      background:
-        linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
-        linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
-      border-radius: 8px;
-      border: 1px solid transparent;
-      padding: 6px 8px;
-    }
-
     .box {
-      padding: 16px;
+      padding: 0.8em 0.5em;
       background: rgba(255, 255, 255, 1);
       border-radius: 16px;
       border: 1px solid white;
@@ -361,7 +378,7 @@ import background from "../assets/background.svg";
         box-shadow 0.6s ease-in-out;
     }
     #services .service:hover {
-      box-shadow: 0 0 100px 15px rgba(24, 42, 12, 0.2);
+      /* box-shadow: 0 0 100px 15px rgba(24, 42, 12, 0.2);
       transform: scale(1.02);
       background: radial-gradient(
         150% 150% at 25% 75%,
@@ -369,12 +386,17 @@ import background from "../assets/background.svg";
         rgba(255, 255, 255, 0.95) 100%
       );
       border-color: rgba(200, 200, 200, 0.9);
-      z-index: 2000;
+      z-index: 2000; */
     }
     small {
       color: #5c6674;
     }
 
+    @media screen and (max-width: 870px) {
+      #links a.button {
+        font-size: smaller;
+      }
+    }
     @media screen and (max-width: 768px) {
       main {
         padding: 0 2vw;
@@ -391,14 +413,18 @@ import background from "../assets/background.svg";
       }
 
       .box {
-        padding: 8px 10px;
+        padding: 0.5em 4em;
       }
 
       #links {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(30%, 3fr));
         gap: 3%;
-        padding-bottom: 2em;
+      }
+
+      #source-code {
+        margin-top: 2em;
+        padding-bottom: 3em;
       }
 
       #links a.button {
@@ -412,14 +438,6 @@ import background from "../assets/background.svg";
         gap: 2dvh;
         margin: 0 auto 1em;
       }
-
-      #news {
-        right: 16px;
-        left: 16px;
-        bottom: 2.5rem;
-        max-width: 100%;
-      }
-
       h1 {
         line-height: 1.25;
         font-size: 20px;
@@ -432,20 +450,24 @@ import background from "../assets/background.svg";
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(45%, 0.5fr));
         gap: 8px;
-        padding-bottom: 3em;
-
+      }
+      .box {
+        padding: 0.5em 3em;
       }
     }
     @media screen and (max-width: 368px) {
-      #links a.button {
+      /* #links a.button {
         padding: 0.6em 1em;
         font-size: smaller;
-      }
+      } */
       #services {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
-        gap: 2dvh;
+        /* grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); */
+        /* gap: 2dvh; */
         margin: 0 auto 2em;
+      }
+      .box {
+        padding: 0.5em 1.5em;
       }
     }
   </style>
